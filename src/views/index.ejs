@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Join Chat room</h2>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Join</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen chat-screen">
+
+            <div class="header">
+                <div class="logo">Chat room</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+
+            <div class="messages">
+                <!-- Dinamic code ... -->
+            </div>
+
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message">Send</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/script.js"></script>
+
+</html>
